@@ -1,53 +1,111 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">-->
+<!--  <modelVersion>4.0.0</modelVersion>-->
+<!--  <groupId>org.example</groupId>-->
+<!--  <artifactId>springmvchibstruct</artifactId>-->
+<!--  <packaging>war</packaging>-->
+<!--  <version>1.0-SNAPSHOT</version>-->
+<!--  <name>springmvchibstruct Maven Webapp</name>-->
+<!--  <url>http://maven.apache.org</url>-->
+<!--  <properties>-->
+<!--    <java.version>17</java.version>-->
+<!--    <maven.compiler.source>17</maven.compiler.source>-->
+<!--    <maven.compiler.target>17</maven.compiler.target>-->
+<!--  </properties>-->
+<!--  <dependencies>-->
+<!--    &lt;!&ndash; JUnit &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>junit</groupId>-->
+<!--      <artifactId>junit</artifactId>-->
+<!--      <version>3.8.1</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; Hibernate &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-core</artifactId>-->
+<!--      <version>5.6.5.Final</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; Struts 2 &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.struts</groupId>-->
+<!--      <artifactId>struts2-core</artifactId>-->
+<!--      <version>2.5.26</version>-->
+<!--    </dependency>-->
+<!--  </dependencies>-->
+
+<!--  <build>-->
+<!--    <finalName>springmvchibstruct</finalName>-->
+<!--    <plugins>-->
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-compiler-plugin</artifactId>-->
+<!--        <version>3.8.1</version> &lt;!&ndash; Use an appropriate version &ndash;&gt;-->
+<!--        <configuration>-->
+<!--          <source>1.8</source> &lt;!&ndash; Adjust to your Java version &ndash;&gt;-->
+<!--          <target>1.8</target> &lt;!&ndash; Adjust to your Java version &ndash;&gt;-->
+<!--        </configuration>-->
+<!--      </plugin>-->
+<!--    </plugins>-->
+<!--  </build>-->
+<!--</project>-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.example</groupId>
-  <artifactId>springmvchibstruct</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>springmvchibstruct Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+<modelVersion>4.0.0</modelVersion>
+<groupId>org.example</groupId>
+<artifactId>springmvchibstruct</artifactId>
+<packaging>war</packaging>
   <properties>
-    <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
-  <dependencies>
-    <!-- JUnit -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+  <version>1.0-SNAPSHOT</version>
+<name>Your Maven Webapp</name>
+<url>http://maven.apache.org</url>
 
-    <!-- Hibernate -->
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>5.6.5.Final</version>
-    </dependency>
+<dependencies>
+  <!-- Spring Web MVC -->
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.20</version>
+  </dependency>
 
-    <!-- Struts 2 -->
-    <dependency>
-      <groupId>org.apache.struts</groupId>
-      <artifactId>struts2-core</artifactId>
-      <version>2.5.26</version>
-    </dependency>
-  </dependencies>
+  <!-- Spring ORM -->
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.3.22</version>
+  </dependency>
 
-  <build>
-    <finalName>springmvchibstruct</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version> <!-- Use an appropriate version -->
-        <configuration>
-          <source>1.8</source> <!-- Adjust to your Java version -->
-          <target>1.8</target> <!-- Adjust to your Java version -->
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <!-- Hibernate -->
+  <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.6.5.Final</version>
+  </dependency>
+
+  <!-- Struts 2 -->
+  <dependency>
+    <groupId>org.apache.struts</groupId>
+    <artifactId>struts2-core</artifactId>
+    <version>2.5.26</version>
+  </dependency>
+  <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.23</version> <!-- Use the version compatible with your MySQL server -->
+  </dependency>
+
+</dependencies>
+
+<build>
+  <finalName>your-webapp-name</finalName>
+  <!-- Other build configurations if needed -->
+</build>
 </project>
+
