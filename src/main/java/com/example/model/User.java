@@ -9,7 +9,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
-    private String phoneNumber;
+    private String password;
 
     public Long getId() {
         return id;
@@ -28,10 +28,10 @@ public class User {
     }
 
     public String getPhoneNumber() {
-        return phoneNumber;
+        return password;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.password = phoneNumber;
     }
 }

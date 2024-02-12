@@ -11,7 +11,7 @@ import org.hibernate.cfg.Configuration;
 public class LoginAction extends ActionSupport {
 
     private String username;
-    private String phoneNumber;
+    private String password;
 
     public String getUsername() {
         return username;
@@ -22,11 +22,11 @@ public class LoginAction extends ActionSupport {
     }
 
     public String getPhoneNumber() {
-        return phoneNumber;
+        return password;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String execute() {
@@ -45,7 +45,7 @@ public class LoginAction extends ActionSupport {
     }
 
     private boolean isValidUser() {
-        return username != null && !username.isEmpty() && phoneNumber != null && !phoneNumber.isEmpty();
+        return username != null && !username.isEmpty() && password != null && !password.isEmpty();
     }
 
     private void saveUserToDatabase() {
@@ -56,7 +56,7 @@ public class LoginAction extends ActionSupport {
         // Create a new User object
         User user = new User();
         user.setUsername(username);
-        user.setPhoneNumber(phoneNumber);
+        user.setPhoneNumber(password);
 
         // Open a new session and transaction
         try (Session session = sessionFactory.openSession()) {
